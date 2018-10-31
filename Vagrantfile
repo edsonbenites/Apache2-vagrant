@@ -84,7 +84,8 @@ Vagrant.configure("2") do |config|
   # git clone https://github.com/mattdesl/simple-html-index.git /var/www/simple-html-index
   rm /etc/apache2/sites-enabled/000-default.conf
   git clone https://github.com/hilagodoy/Apache2-vagrant.git /etc/apache2/sites-enabled
-  service apache2 restart 
+  sudo /etc/init.d/apache2 start
+  #service apache2 restart 
 
   SHELL
 end
